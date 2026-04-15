@@ -25,24 +25,43 @@ Documents → Loader → Chunking → Embeddings → Vector Store → Query
 ## 📂 Project Structure
 
 rag-vector-pipeline/
+
 │
+
 ├── data/
+
 │ ├── raw/ # Input documents (PDF, TXT)
+
 │ └── vector_store/ # Persistent ChromaDB storage
+
 │
+
 ├── src/
+
 │ ├── ingestion/
+
 │ │ ├── loader.py
+
 │ │ └── chunking.py
+
 │ │
+
 │ ├── embeddings/
+
 │ │ └── embedding_manager.py
+
 │ │
+
 │ ├── vectorstore/
+
 │ │ └── chroma_store.py
+
 │
+
 ├── main.py
+
 ├── requirements.txt
+
 └── README.md
 
 
@@ -60,7 +79,6 @@ rag-vector-pipeline/
 
 ## 🛠️ Installation
 
-```bash
 git clone <your-repo-url>
 cd rag-vector-pipeline
 
